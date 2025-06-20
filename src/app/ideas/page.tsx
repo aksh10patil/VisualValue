@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
-import Image from "next/image";
-import Link from "next/link";
 
 import AnimatedCard from "@/components/AnimatedCard";
 
