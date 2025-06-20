@@ -15,10 +15,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <div className="fixed top-0 left-0 h-screen w-64 border-r border-gray-200 dark:border-gray-700 bg-white dark:bg-black z-50">
           <Sidebar />
         </div>
-
-        
-
-
         {children}
       </body>
     </html>
