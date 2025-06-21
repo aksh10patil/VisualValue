@@ -1,3 +1,5 @@
+
+import Footer from "@/components/Footer";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import { Funnel_Display } from 'next/font/google';
@@ -18,8 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
 
         {/* Content area: full width on mobile, shifted on md+ */}
-        <main className="w-full ">
+        <main className="w-full">
           {children}
+          <Footer />
         </main>
       </body>
     </html>

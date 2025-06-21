@@ -3,6 +3,8 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { motion } from "framer-motion";
+import ArticleSlider from "@/components/ArticleSlider";
+import ArticleFooter from "@/components/ArticleFooter";
 
 export default function Leverage() {
   const textRef = useRef(null);
@@ -18,6 +20,7 @@ export default function Leverage() {
   }, []);
 
   return (
+    <>
     <div className="flex flex-col md:flex-row ml-64 mt-40 gap-10 px-6 max-w-7xl mx-auto">
       {/* Image Card */}
       <motion.div
@@ -81,5 +84,8 @@ export default function Leverage() {
 </div>
 
     </div>
+
+      <ArticleFooter />
+    </>
   );
 }
