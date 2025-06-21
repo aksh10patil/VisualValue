@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useEffect } from "react";
 import Link from "next/link"; 
 
@@ -49,7 +48,7 @@ export default function LandingPage() {
 
   return (
     <main className="h-screen md:ml-32 w-full flex items-center justify-center bg-gradient-to-br from-black
-     via-gray-900 to-black text-white font-sans overflow-hidden relative">
+     via-gray-900 to-black text-white overflow-hidden relative">
       <canvas
         id="particles"
         className="absolute inset-0 z-0"

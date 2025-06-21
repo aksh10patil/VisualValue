@@ -1,27 +1,18 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
-import { Sun, Moon, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 export default function Sidebar() {
-  const [darkMode, setDarkMode] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [darkMode])
 
   return (
     <>
       {/* Hamburger for small screens */}
       <div className="md:hidden fixed top-4 left-4 z-50">
         <button onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X className="w-6 h-6 text-black dark:text-white" /> : <Menu className="w-6 h-6 text-black dark:text-white" />}
+          {isOpen ? <X className="w-6 h-6 text-black" /> : <Menu className="w-6 h-6 text-black dark:text-white" />}
         </button>
       </div>
 
@@ -32,20 +23,15 @@ export default function Sidebar() {
         ${isOpen ? 'translate-x-0' : '-translate-x-full'}
         md:translate-x-0 md:static md:flex
       `}>
-        {/* Top section: logo + toggle */}
+        {/* Top section: logo */}
         <div>
           <div className="flex justify-between items-center mb-10">
             <div className="text-2xl font-bold text-black dark:text-white">⋃.⋃</div>
-            <div className="flex gap-3">
-              <button onClick={() => setDarkMode(!darkMode)}>
-                {darkMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-white" />}
-              </button>
-            </div>
           </div>
 
           {/* Nav links */}
           <nav className="space-y-6 text-lg font-medium text-gray-800 dark:text-gray-100">
-          <Link href="/" className="block hover:text-black dark:hover:text-white">Home</Link>
+            <Link href="/" className="block hover:text-black dark:hover:text-white">Home</Link>
             <Link href="/ideas" className="block hover:text-black dark:hover:text-white">Ideas</Link>
             <Link href="/about" className="block hover:text-black dark:hover:text-white">About</Link>
             <Link href="/books" className="block hover:text-black dark:hover:text-white">Get more ideas like these / Must Read</Link>
