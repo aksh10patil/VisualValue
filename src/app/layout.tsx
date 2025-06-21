@@ -1,4 +1,3 @@
-
 import Footer from "@/components/Footer";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
@@ -12,15 +11,13 @@ const funnelDisplay = Funnel_Display({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html  lang="en" className={funnelDisplay.className} >
+    <html lang="en" className={funnelDisplay.className}>
       <body className={`${funnelDisplay.className} flex`}>
-        {/* Sidebar: visible only on md+ screens */}
-        <div className="hidden md:block w-64 h-screen fixed top-0 left-0 z-50 bg-black">
-          <Sidebar />
-        </div>
+        {/* ✅ Always render Sidebar. It controls its own visibility internally */}
+        <Sidebar />
 
-        {/* Content area: full width on mobile, shifted on md+ */}
-        <main className="w-full">
+        {/* ✅ Content area: shifted on md+ because Sidebar is 64px wide */}
+        <main className="w-full md:ml-64">
           {children}
           <Footer />
         </main>

@@ -21,7 +21,8 @@ export default function Leverage() {
 
   return (
     <>
-    <div className="flex flex-col md:flex-row ml-64 mt-40 gap-10 px-6 max-w-7xl mx-auto">
+    <div className="flex flex-col md:flex-row md:ml-64 mt-40 gap-10 px-6 max-w-7xl mx-auto">
+
       {/* Image Card */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
