@@ -45,9 +45,10 @@ export default function Sidebar() {
 
           {/* Nav links */}
           <nav className="space-y-6 text-lg font-medium text-gray-800 dark:text-gray-100">
+          <Link href="/" className="block hover:text-black dark:hover:text-white">Home</Link>
             <Link href="/ideas" className="block hover:text-black dark:hover:text-white">Ideas</Link>
             <Link href="/about" className="block hover:text-black dark:hover:text-white">About</Link>
-            <Link href="/" className="block hover:text-black dark:hover:text-white">Get more ideas like these / Must Read</Link>
+            <Link href="/books" className="block hover:text-black dark:hover:text-white">Get more ideas like these / Must Read</Link>
           </nav>
         </div>
 

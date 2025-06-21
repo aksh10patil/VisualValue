@@ -48,8 +48,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <main className="h-screen md:ml-32 w-full flex items-center justify-center bg-gradient-to-br from-black
-     via-gray-900 to-black text-white font-sans overflow-hidden relative">
+    <main className="h-screen w-full flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black text-white font-sans overflow-hidden relative">
       <canvas
         id="particles"
         className="absolute inset-0 z-0"
