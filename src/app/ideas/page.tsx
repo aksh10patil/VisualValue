@@ -4,11 +4,19 @@ import Card from "@/components/Card";
 
 export default function ideas() {
     return <>
+<<<<<<< HEAD
           <main className="py-5 px-6 sm:px-8 md:px-6 md:ml-64 mb-8">
   <h1 className="text-2xl font-semibold text-center md:text-left">Ideas</h1>
 </main>
 
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 px-6 sm:px-8 ml-0 md:ml-64 max-w-full">
+=======
+          <main className="py-20 px-6 sm:px-8 md:px-6 md:ml-0 mb-8">
+  <h1 className="text-2xl font-semibold text-center md:text-left">Ideas</h1>
+</main>
+
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 mb-70 px-6 sm:px-8 ml-0 md:ml-0 max-w-full">
+>>>>>>> new-feature-branch
 
 
   <Card
