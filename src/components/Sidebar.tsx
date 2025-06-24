@@ -43,19 +43,6 @@ export default function Sidebar() {
       `}>
         {/* Sidebar content */}
         <div>
-<<<<<<< HEAD
-          <div className="text-2xl font-bold mb-10">⋃.⋃</div>
-
-          <nav className="space-y-6 text-lg font-medium text-gray-100">
-            <Link href="/" className="block hover:text-white" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link href="/ideas" className="block hover:text-white" onClick={() => setIsOpen(false)}>Ideas</Link>
-            <Link href="/about" className="block hover:text-white" onClick={() => setIsOpen(false)}>Our Philosophy</Link>
-            <Link href="/books" className="block hover:text-white" onClick={() => setIsOpen(false)}>Must Read</Link>
-          </nav>
-        </div>
-
-        <div className="text-xs text-gray-400">© 2025 U.U</div>
-=======
           <div className="flex justify-between items-center mb-10">
             <div className="text-2xl font-bold text-black dark:text-white">V.V</div>
           </div>
@@ -71,7 +58,6 @@ export default function Sidebar() {
 
         {/* Footer */}
         <div className="text-xs text-gray-400 dark:text-gray-600">© 2025 V.V</div>
->>>>>>> new-feature-branch
       </div>
     </>
   )
