@@ -32,7 +32,7 @@ export default function Sidebar() {
         {/* Top section: logo */}
         <div>
           <div className="flex justify-between items-center mb-10">
-            <div className="text-2xl font-bold text-black dark:text-white">⋃.⋃</div>
+            <div className="text-2xl font-bold text-black dark:text-white">V.V</div>
           </div>
 
           {/* Nav links */}
@@ -45,7 +45,7 @@ export default function Sidebar() {
         </div>
 
         {/* Footer */}
-        <div className="text-xs text-gray-400 dark:text-gray-600">© 2025 U.U</div>
+        <div className="text-xs text-gray-400 dark:text-gray-600">© 2025 V.V</div>
       </div>
     </>
   )
