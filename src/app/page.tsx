@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import Footer from '@/components/Footer';
+
 import Link from 'next/link';
 
 interface Particle {
@@ -178,12 +179,16 @@ export default function App(): JSX.Element {
 
   // GSAP animations on mount
   useEffect(() => {
+    if (typeof window === "undefined") return;
+  
     const script = document.createElement('script');
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js';
     script.onload = () => {
       const gsap = (window as any).gsap;
-      
-      // Hero title animation
+      if (!gsap) return;
+  
+      gsap.registerPlugin((window as any).ScrollTrigger);
+  
       gsap.fromTo('.hero-title', {
         y: 100,
         opacity: 0,
