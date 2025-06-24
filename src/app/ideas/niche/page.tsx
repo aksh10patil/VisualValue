@@ -21,11 +21,7 @@ export default function Niche() {
 
   return (
     <>
-<<<<<<< HEAD
-    <div className="flex flex-col md:flex-row md:ml-64 mt-40 gap-10 px-6 max-w-7xl mx-auto">
-=======
     <div className="flex flex-col md:flex-row mt-40 gap-10 px-6 max-w-7xl mx-auto">
->>>>>>> new-feature-branch
       {/* Image Card */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}

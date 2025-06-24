@@ -2,8 +2,10 @@
 
 import Card from "@/components/Card";
 
-export default function ideas() {
-    return <>
+export default function Ideas() {
+  
+    return (
+    <>
           <main className="py-5 px-6 sm:px-8 md:px-6  mb-8">
   <h1 className="text-2xl font-semibold text-center md:text-left">Ideas</h1>
 </main>
@@ -30,7 +32,7 @@ export default function ideas() {
     link="/ideas/vision"
   />
 </div>
-
     </>
+    )
   }
   
