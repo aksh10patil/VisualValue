@@ -43,7 +43,7 @@ export default function BookCard({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 underline text-sm"
+            className="text-blue-500 underline mt-auto text-sm"
           >
             Read more →
           </a>
